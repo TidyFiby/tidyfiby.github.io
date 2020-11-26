@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cafe</title>
+	<style>
+		ul{
+			width: 200px;
+			height: 600px;
+			background-color: red;
+			overflow: hidden;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		li{
+			width: 200px;
+			height: 100px;
+			margin-top: 20px;
+			background-color: greenyellow;
+		}
+	</style>
+	<section>
+		<select id="s" size="10" style="width:200px">
+		</select>
+	</section>	
+			
+	<li onClick="a()" id="cc" value="点击">点击</li>
+</head>
+<body>
+	<script>
+		
+
+			var butt=document.getElementById("cc");
+			butt.onclick=function(){
+				var select=document.getElementById("s");
+				var op = document.createElement("option")
+				op.appendChild(document.createTextNode("选择"))
+				select.appendChild(op)	
+			}
+	</script>
+</body>
+</html>

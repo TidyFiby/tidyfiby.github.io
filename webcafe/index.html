@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="css/cafe.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/cafe.js"></script>
+    <script>
+        function photo1(x){
+            x.src="images/scone_info.jpg";
+        }
+        function option1(x){
+            x.src="images/scone.jpg";
+        }
+        function photo2(x){
+            x.src="images/biscotti_info.jpg";
+        }
+        function option2(x){
+            x.src="images/biscotti.jpg";
+        }
+        function photo3(x){
+            x.src="images/coffee_info.jpg";
+        }
+        function option3(x){
+            x.src="images/coffee.jpg";
+        }
+        function photo4(x){
+            x.src="images/cappuccino_info.jpg";
+        }
+        function option4(x){
+            x.src="images/cappuccino.jpg";
+        }
+        function photo5(x){
+            x.src="images/latte_info.jpg";
+        }
+        function option5(x){
+            x.src="images/latte.jpg";
+        }
+        function photo6(x){
+            x.src="images/espresso_info.jpg";
+        }
+        function option6(x){
+            x.src="images/espresso.jpg";
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul>
+            		<li><a href="#"><img onmouseover="photo6(this)" onmouseout="option6(this)" id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"/></a></li>
+            		<li><a href="#"><img onmouseover="photo5(this)" onmouseout="option5(this)" id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"/></a></li>
+            		<li><a href="#"><img onmouseover="photo4(this)" onmouseout="option4(this)" id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
+            		<li><a href="#"><img onmouseover="photo3(this)" onmouseout="option3(this)" id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"/></a></li>
+            		<li><a href="#"><img onmouseover="photo2(this)" onmouseout="option2(this)" id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"/></a></li>
+            		<li><a href="#"><img onmouseover="photo1(this)" onmouseout="option1(this)" id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+<!--
+						<option value="Scone">$2.9-Scone</option>
+						<option value="Scone">$9.9-Coffee</option>
+-->
+            		</select>
+            		<p id="total"></p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="button" name="place_order" id="place_order" value="Place Order" onClick="cal()">
+           			<input type="reset" name="clear_order" id="clear_order" value="Clear Order" onclick="clearcontent()">				            		
+            	</section>
+            </section>   
+
+
+
+        </form>
+    </main> 
+</body>
+</html>
