@@ -22,11 +22,11 @@ main {
 }
 label {
 	float: left;
-    width: 8em;
+    width: 10em;
     text-align: right;
 }
 input {
-    margin-left: 1em;
+    margin-left: 2em;
     margin-bottom: .5em;
 }
 p {

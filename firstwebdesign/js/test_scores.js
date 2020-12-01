@@ -17,11 +17,11 @@ var displayResults = function(){
     for(var i=0;i<scores.length;i++){
         sum = sum + scores[i];
         var average = parseFloat(sum) / parseFloat(scores.length);
-        if(average > 90 && average<100){
+        if(average > 89 && average<100){
             highest_score = "A";
             
         }
-        else if(average > 80 && average < 89){
+        else if(average > 79 && average < 89){
             highest_score = "B";
             
         }
@@ -29,7 +29,7 @@ var displayResults = function(){
             highest_score = "C";
             
         }
-        else if(average > 60 && average < 69){
+        else if(average > 59 && average < 69){
             highest_score = "D";
             
         }
